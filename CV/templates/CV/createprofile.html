@@ -1,0 +1,11 @@
+{% extends 'CV/home.html'%}
+
+{% block content %}
+<form action="" method="POST">
+    {%csrf_token%}
+    {{ form.management_form }}
+    {{form.as_p}}
+    <button type="submit">Submit data</button>
+</form>
+
+{% endblock content %}
